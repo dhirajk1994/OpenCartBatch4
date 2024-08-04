@@ -25,13 +25,14 @@ public class Class_login {
   
 	if(u.equals("https://opencart.dhirajkulkarni.com/index.php?route=account/login&language=en-gb"))
    {
-	   System.out.println("Test case is pass");
+	   System.out.println("Test case is pass succesfully");
 	   
     }
    else
    {
 	 System.out.println("Test case is fail");
 
+	 
     }
 }
 	
