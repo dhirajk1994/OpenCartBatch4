@@ -20,6 +20,15 @@ public class LoginTest {
 				driver.findElement(By.xpath("//input[@type='password']")).sendKeys("Buddham@821");
 				//driver.findElement(By.xpath("//button[@type='submit']")).click();
 				driver.findElement(By.xpath("//button[text()='Login']")).click();
+				String ExpectedUrl= driver.getCurrentUrl();
+				
+				if(ExpectedUrl.equals("https://opencart.dhirajkulkarni.com/")) {
+					System.out.println("Login test is passed");
+				}
+				else {
+					System.out.println("login test is failed");
+				}
+				
 				
 				}
 }
