@@ -1,12 +1,22 @@
 package AutomationProject.AutomationFramework;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
 public class newdemo {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-System.out.println("welcome to git");
-System.out.println("Hello123");
-System.out.println("hi");
+		WebDriver driver=new ChromeDriver();
+		driver.get("https://opencart.dhirajkulkarni.com/index.php?route=account/login&language=en-gb");
+		driver.findElement(By.id("input-email")).sendKeys("Dhiraj");
+		driver.findElement(By.id("input-password")).sendKeys("dhrira");
+		
+		driver.findElement(By.xpath("//button[text()='Login']")).click();
+		
+		//driver.quit();
+	//driver.quit();
 	}
 
 }
