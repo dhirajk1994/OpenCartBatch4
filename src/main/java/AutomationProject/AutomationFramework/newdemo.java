@@ -24,7 +24,7 @@ public class newdemo {
 		String s2 =driver.findElement(By.id("alert")).getText().toString();
 		if(msg.equals(s2))
 		{
-			System.out.println("validation done");
+			System.out.println("validation done");   
 		}
 		else
 		{
