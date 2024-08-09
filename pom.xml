@@ -20,6 +20,7 @@
   </properties>
 
   <dependencies>
+<<<<<<< HEAD
   <dependency>
     <groupId>org.testng</groupId>
     <artifactId>testng</artifactId>
@@ -39,6 +40,25 @@
     <artifactId>selenium-java</artifactId>
     <version>4.23.0</version>
 </dependency>  </dependencies>
+=======
+<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+		<dependency>
+		    <groupId>org.seleniumhq.selenium</groupId>
+		    <artifactId>selenium-java</artifactId>
+		    <version>4.23.0</version>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/org.testng/testng -->
+		<dependency>
+		    <groupId>org.testng</groupId>
+		    <artifactId>testng</artifactId>
+		    <version>7.10.2</version>
+		    <scope>test</scope>
+		</dependency>
+
+
+  </dependencies>
+>>>>>>> branch 'gitdemo' of https://github.com/dhirajk1994/OpenCartBatch4.git
 
   <build>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->

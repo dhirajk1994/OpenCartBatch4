@@ -10,7 +10,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class newdemo {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		// TODO Auto-generated method stub  
 		
 		WebDriver driver=new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10) );
@@ -30,6 +30,8 @@ public class newdemo {
 		{
 			System.out.println("validation fail");
 		}
+		
+		
 		
 		
 	//	System.out.println(msg.equals(s2));
