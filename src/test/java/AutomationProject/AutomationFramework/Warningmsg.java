@@ -18,13 +18,21 @@ driver.findElement(By.xpath("//input[@name='email']")).sendKeys("amruta@gmail.co
 driver.findElement(By.xpath("//input[@name='password']")).sendKeys("amruta@123");
 driver.findElement(By.xpath("//button[text()='Login']")).click();
 Thread.sleep(5000);
-WebElement alert = driver.findElement(By.id("alert"));
-driver.switchTo().alert();
-Thread.sleep(3000);
-String alertmsg = alert.getText();
+//driver.switchTo().alert();
+String ExpectedAlertmsg = "Warning: No match for E-Mail Address and/or Password";
+String ActualAlertmsg =driver.findElement(By.id("alert")).getText();
+String ActualAlertmsg1= ActualAlertmsg.trim();
+ if(ActualAlertmsg1.equals(ExpectedAlertmsg)) {
 
- System.out.println(alertmsg);
+	 System.out.println("Test case passed");
+
+	  }
+ else {
+	 System.out.println("Test case failed");
+
+ }
+}
 
 	}
 
-}
+

@@ -33,7 +33,7 @@ public class LoginTest {
 				}else {
 				System.out.println("Alert message is not Displayed");
 				}
-//Verify alert msg text.
+//Verify alert message text.
 String Expectedmsg = "Warning: No match for E-Mail Address and/or Password.";
 String Actualmsg = alert.getText();
 if(Expectedmsg.equals(Actualmsg)) {
